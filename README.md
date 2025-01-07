@@ -1,6 +1,8 @@
-# VR64-Keyboard-PCB
+# SR64-Keyboard-PCB
 
 <p align="center"><img src="docs/donotbuild.min.svg" alt="Under Construction" width="320"></p>
+
+> ⚠️ Ideation phase - no actual content here.
 
 ## Intent
 
@@ -11,7 +13,7 @@ A 64-key Hall Effect *(**HE**)* keyboard with QMK f/w, build on a GH60/Bakeneko 
 
 #### Render
 
-![Render](docs/vr64-render.png)
+![Render](docs/sr64-render.png)
 
 
 ## Planned Features
@@ -30,7 +32,7 @@ A 64-key Hall Effect *(**HE**)* keyboard with QMK f/w, build on a GH60/Bakeneko 
 ## Possible BIG issues
 
 - HE !!
-    1. QNK does not have a native HE implementation
+    1. QMK does not have a native HE implementation
     2. ... one will need to be built
     3. In this build - how do we address **individual** switch calibration?
         - **Idea:** Dynamicly keep a list of MIN & MAX read values and program the code to be based on percentage values of each key's MIN MAX.  Dynamically update those values over usage for a "self calibration" feature.  But ... how do we manage:
@@ -39,10 +41,12 @@ A 64-key Hall Effect *(**HE**)* keyboard with QMK f/w, build on a GH60/Bakeneko 
             3. EEPROM retention may be adverse on storage longevity 
     4. For future ref., see how others have done it:
        - **Keychron:** https://github.com/Keychron/qmk_firmware/tree/hall_effect_playground/keyboards/keychron
+           - Calibration is assumed as they only use one brand of switch
        - **[&#64;RephlexZero](https://github.com/RephlexZero):**  https://github.com/RephlexZero/qmk_firmware/tree/moonboard/keyboards/rephlex/moonboard 
-- Is the 0.25U offset ZXCVBN row personally off-putting?
+           - Have not researched how they calibrate
+- ~~Is the 0.25U offset ZXCVBN row personally off-putting?~~ *[Irrelevant* :smile: *]*
 
 &nbsp;<br>&nbsp;
 
 ---
-Made with &#9829; by Vino Rodrigues
+Made with :heart: by [**Silvino Rodrigues**](https://github.com/silvinor)
